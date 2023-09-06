@@ -1,0 +1,47 @@
+.box{
+ background-color: green;  
+ height: 100px; 
+ width: 25%;
+
+ font-size: 25px;
+ font-weight: bold;
+ text-align: center;
+ color: white;
+ line-height: 100px;
+ 
+}
+.box2{
+    background-color: rgb(128, 9, 0);  
+ height: 100px; 
+ width: 500px;
+
+ font-size: 25px;
+ font-weight: bold;
+ text-align: center;
+ color: white;
+ line-height: 100px;
+}
+
+.box3{
+    background-color: rgb(243, 26, 10);  
+ height: 100px; 
+ width: 800px;
+
+ font-size: 25px;
+ font-weight: bold;
+ text-align: center;
+ color: white;
+ line-height: 100px;
+}
+
+.box4{
+    background-color: rgb(10, 49, 243);  
+ height: 100px; 
+ width: 1000px;
+
+ font-size: 25px;
+ font-weight: bold;
+ text-align: center;
+ color: white;
+ line-height: 100px;
+}
