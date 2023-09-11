@@ -1,0 +1,15 @@
+.abc{
+    border: 1px solid red;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 5px 5px 20px red;
+
+    background-color: pink;
+    height: 150px;
+    width: 220px;
+
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+
+}
