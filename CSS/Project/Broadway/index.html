@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;1,400&display=swap');
+        *{
+            font-family: 'Source Sans 3', sans-serif;
+        }
         .header{
             width: 1200px;
-            margin:auto
-        }
+            margin:10px auto 25px auto;
+            
+        }   
         .logo{
             float: left;
             width: 175px;
@@ -27,7 +33,7 @@
         }
         .enquiry{
             float:left;
-            margin: 20px 0 0 50px;
+            margin: 15px 0 0 50px;
             border-radius: 7px;
             background-color: #274595;
             padding: 17px;
@@ -36,6 +42,77 @@
             text-decoration: none;
             color:white;
         }
+
+        nav{
+            clear: both;
+           
+            border: 1px solid rgb(208, 208, 209);
+           
+            
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0 250px ;
+        }
+        li{
+            float: left;
+            
+            margin: 0 5px;
+            padding: 13px;
+        }
+        nav ul li a{
+            color: black;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .box{
+            float:left
+        }
+        section{
+            clear: both;
+        }
+        .left{
+            width: 35%;
+            height: 550px;
+            background-color: blue;
+        }
+        .middle{
+            width: 45%;
+            height: 550px;
+            background-color: rgb(0, 255, 195);
+        }
+        .middle img{
+            width: 100%;
+            height: 100%;
+        }
+        .right{
+            width: 19%;
+            height: 550px;
+           
+        }
+        .right .up{
+            background-color: purple;
+            color: white;
+        }
+        .right .up img{
+            padding: 30px 0 0 20px;
+        }
+        .right .up h1{
+            padding: 0 0 0 20px;
+            font-size: 45px;
+            font-weight: 900;
+        }
+        .right .down{
+            background-color: green;
+        }
+        footer{
+            clear: both;
+            background-color: #213688;
+            color:white;
+            padding: 25px;
+            height: 100px;
+        }
     </style>
 </head>
 <body>
@@ -43,7 +120,7 @@
         <div class="logo">
             <img src="https://broadwayinfosys.com/uploads/logo/1667276403.new_broadway_logo.svg" alt="">
         </div>
-        <div class="all_course"> <h3> All Courses</h3></div>
+        <div class="all_course"> <h3><i class="fa-solid fa-bars"></i> &nbsp; All Courses</h3></div>
         <div class="search">
             <input type="text" placeholder="What do you want ot learn today ?" size="40">
         </div>
@@ -53,7 +130,41 @@
                 01-4111849  / 9808724535
             </h4>
         </div>
-        <div class="enquiry"> <a href=""> SEDN ENQUIRY </a> </div>
+        <div class="enquiry"> <a href=""> SEDN ENQUIRY  <i class="fa-solid fa-arrow-right-long"></i></a> </div>
     </div>
+
+    <nav>
+        <ul>
+            <li> <a href=""> Success Gallery </a></li>
+            <li> <a href="">Student Testimonials</a></li>
+            <li><a href="">Upcoming Classes</a></li>
+            <li> <a href=""> Career</a></li>
+            <li> <a href=""> Contact Us</a></li>
+            <li> <a href="">Blog</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="box left"></div>
+        <div class="box middle">
+            <img src="https://broadwayinfosys.com/uploads/slider/165475157115894.jpg" alt="">
+        </div>
+        <div class="box right">
+            <div class="up">
+                <img alt="Professional and Qualified Teachers" src="https://broadwayinfosys.com/uploads/homepage-counter/1627360500.ico-graduation-cap.svg">
+                <h1>70 <sup>+</sup></h1>
+                <h3>Professional and Qualified Teachers</h3>
+            </div>
+            <div class="down">df</div>
+        </div>
+    </section>
+    
+    <footer>
+<h1>@footer</h1>
+    </footer>
+
+
+
+
 </body>
 </html>
