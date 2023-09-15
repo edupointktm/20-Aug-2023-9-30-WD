@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container .sub-container .box h1 {
+            color: red;
+        } */
+        /* .main + p{
+            color:red;
+        } */
+        .container .sub-container ~ .box {
+            color:red;
+        }
+
+        img[title="img"]{
+            width: 20%;
+        }
+        h1{
+            color:green;
+        }
+        h1:hover{
+            color:red
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eum sint cupiditate minus dicta ut
+            <span>repellat exercitationem </span>esse rem rerum corporis expedita optio modi. Ea doloribus assumenda
+            possimus amet commodi.</p>
+        <div class="container">
+            <h1>Broadway</h1>
+            <div class="sub-container">
+                <h1>Tinkune</h1>
+
+                <div class="box">
+                     
+                    <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing </span> elit. Quo, delectus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing </span> elit. Quo, delectus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing </span> elit. Quo, delectus?</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eum sint cupiditate minus dicta ut
+                <span>repellat exercitationem </span>esse rem rerum corporis expedita optio modi. Ea doloribus assumenda
+                possimus amet commodi.</p>
+            <h1>Broadway</h1>
+            <div class="sub-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eum sint cupiditate minus dicta ut
+                    <span>repellat exercitationem </span>esse rem rerum corporis expedita optio modi. Ea doloribus
+                    assumenda possimus amet commodi.</p>
+                <h1>Tinkune</h1>
+                <div class="box">
+                    <h1>Heading First</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur <span>adipisicing </span> elit. Quo, delectus?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="https://plus.unsplash.com/premium_photo-1694618625193-3d056dcd1ca7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="photo" title="img">
+    <img src="https://images.unsplash.com/photo-1694619361594-92128061b0a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="" title="img1">
+</body>
+
+</html>
