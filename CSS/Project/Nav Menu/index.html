@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li{
+            float:left;
+            width: 130px;
+            text-align: center;
+            border: 1px solid red;
+            
+        }
+        ul li:hover{
+            color: blue;
+        }
+        ul li{
+            position: relative;
+        }
+        ul ul{
+            display: none;
+        }
+        ul li:hover > ul{
+            display: block;
+        }
+        ul ul ul{
+            position: absolute;
+            top:0;
+            left:100%
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>HOME</li>
+        <li>ABOUT
+            <ul>
+                <li>Compnay </li>
+                <li>College </li>
+                <li>School 
+                    <ul>
+                        <li>School 1</li>
+                        <li>School 2
+                            <ul>
+                                <li>Sub-scho one</li>
+                                <li>Sub-scho Two</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>SERVICES
+            <ul>
+                <li>Graphics Design</li>
+                <li>Web Design</li>
+                <li>Marketing</li>
+                <li>Branding
+                    <ul>
+                        <li>Corporate Branding</li>
+                        <li>Personal Branding</li>
+                        <li>Place Branding</li>
+                        <li>Digitial Branding</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>PORTFOLIO</li>
+        <li>CONTACT
+            <ul>
+                <li>Personal</li>
+                <li>House</li>
+                <li>Office</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
