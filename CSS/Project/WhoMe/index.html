@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap');
+
+        * {
+            font-family: 'Montserrat', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            background-color: rgb(232, 232, 232);
+            height: 50px;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 5px
+        }
+
+        nav {
+            width: 1200px;
+            margin: auto;
+            padding: 10px;
+        }
+        section{
+            background-color: #1ABC9C;
+            color: white;
+            text-align: center;
+        }
+        section .who{
+            padding: 30px 0 ;
+        }
+        section .where{
+            padding: 30px 0 ;
+        }
+        section img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="flex">
+            <div>
+                <h3> Me </h3>
+            </div>
+            <div class="nav_item">
+                <ul class="flex">
+                    <li> WHO </li>
+                    <LI>WHAT</LI>
+                    <li>WHERE</li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+<section >
+        <h1 class="who">Who Am I</h1>
+        <img src="https://www.w3schools.com/bootstrap/bird.jpg" alt="">
+        <h3 class="where">I'm an adventurer</h3>
+</section>
+</body>
+
+</html>
