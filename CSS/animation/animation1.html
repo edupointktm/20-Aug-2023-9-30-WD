@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 200px;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 50%;
+            animation-name: box-ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .box .sub-box{
+            width: 50px;
+            height: 50px;   
+            border: 1px solid black;
+            border-radius: 50%;
+           
+        }
+
+        @keyframes box-ani {
+            0%{rotate: 0deg;}
+            100%{rotate: 365deg;}
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="sub-box">
+
+        </div>
+    </div>
+</body>
+</html>

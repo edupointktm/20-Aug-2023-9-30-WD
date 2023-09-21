@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+
+            animation-name: box-ani;
+            animation-duration: 3s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes box-ani {
+            0%{left:0;top:0}
+            /* 25%{left:750px;top:0}
+            50%{left:0x;top:250px}
+            75%{scroll-margin-right:750px;top:250px} */
+            100%{left:850px;top:0;rotate: 365deg;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
