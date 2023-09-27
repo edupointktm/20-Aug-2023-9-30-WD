@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            border:1px solid blue;
+            flex-grow: 1;
+        }
+        .items1{
+            width: 25% ;
+            height: 300px;
+            background-color: red;
+            flex-grow: 1;
+        }
+        .items2{
+            width: 25% ;
+            height: 300px;
+            background-color: rgb(47, 255, 0);
+            flex-grow: 1;
+        }
+        .items3{
+            width: 25% ;
+            height: 300px;
+            background-color: rgb(0, 42, 255);
+            flex-grow: 1;
+        }
+        .items4{
+            width: 25% ;
+            height: 300px;
+            background-color: rgb(255, 0, 157);
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width:800px){
+            .box{
+                flex-direction: column;
+            }
+            .items1{
+                width: 100%;
+            }
+            .items2{
+                width: 100%;
+            }
+            .items3{
+                width: 100%;
+            }
+            .items4{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="items1">Items</div>
+        <div class="items2">Items 2</div>
+        <div class="items3">Items 3</div>
+        <div class="items4">Items 4</div>
+    </div>
+</body>
+</html>
