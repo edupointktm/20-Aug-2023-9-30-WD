@@ -1,0 +1,55 @@
+$green: green;
+$gray: rgb(144, 143, 143);
+$white: white;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: $green;
+
+    .container {
+        // border: 1px solid red;
+        width: 1200px;
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        .logo{
+            font-size: 25px;
+            font-weight: bold;
+            color:$white;
+            span{
+                color:yellow
+            }
+        }
+        nav {
+            width: 120px;
+
+            ul {
+                display: flex;
+                gap:15px;
+                li {
+                    a {
+                        color: $white;
+                        font-size:18px;
+                    }
+                }
+            }
+        }
+    }
+}

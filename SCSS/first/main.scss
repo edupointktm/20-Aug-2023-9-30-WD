@@ -1,0 +1,20 @@
+$color-red:rgb(5, 9, 245);
+$f-size-40:40px;
+
+h1{
+    color:$color-red;
+    font-size: $f-size-40;
+}
+
+h3{
+    color:$color-red;
+    font-size: ($f-size-40)-20;
+}
+
+.box{
+    background-color: $color-red;
+}
+
+p{
+    color: $color-red;
+}
