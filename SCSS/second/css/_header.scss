@@ -1,0 +1,43 @@
+header {
+    background-color: $green;
+
+    .container {
+        // border: 1px solid red;
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: $white;
+
+            span {
+                color: yellow
+            }
+        }
+
+        nav {
+            width: 120px;
+
+            ul {
+                display: flex;
+                gap: 15px;
+
+                li {
+                    a {
+                        color: $white;
+                        font-size: 18px;
+
+                        &:hover {
+                            color: rgb(255, 0, 17);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

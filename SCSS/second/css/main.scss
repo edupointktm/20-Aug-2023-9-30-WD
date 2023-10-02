@@ -1,7 +1,17 @@
-$green: green;
-$gray: rgb(144, 143, 143);
-$white: white;
+@import "_variable.scss";
 
+@mixin heading($f_s:16px){
+    font-size: $f_s;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    color:$green
+}
+.font{
+    font-size: 18px;
+    color:$white;
+    border-radius: 15px;
+}
 * {
     padding: 0;
     margin: 0;
@@ -19,37 +29,94 @@ ul {
     margin: 0;
 }
 
-header {
-    background-color: $green;
+@import "_header";
 
-    .container {
-        // border: 1px solid red;
-        width: 1200px;
-        margin:auto;
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        .logo{
-            font-size: 25px;
-            font-weight: bold;
-            color:$white;
-            span{
-                color:yellow
-            }
-        }
-        nav {
-            width: 120px;
+.slider {
+    height: 600px;
 
-            ul {
-                display: flex;
-                gap:15px;
-                li {
-                    a {
-                        color: $white;
-                        font-size:18px;
-                    }
-                }
-            }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.prodcut {
+    .headings {
+        h2 {
+           @include heading(25px);
         }
     }
+.main-card{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .card {
+        width: 320px;       
+        text-align: center;
+       
+        .image {
+            width: 90%;
+            height: 250px;
+            text-align: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+
+            }
+        }
+
+        .card-title {
+            h3 {
+                @include heading(20px)
+            }
+
+        
+        }
+
+        .price{
+            font-size: 25px;
+            font-weight: bold;
+            color:purple;
+            padding: 20px;
+        }
+        .button{
+            padding: 12px 20px ;
+            background-color: $green;
+            width: 150px;
+            margin: auto;
+
+            @extend .font;
+           
+        }
+    }
+}
+}
+
+.sales-section{
+    .sales{
+        h2{
+            @include heading()
+        }
+    }
+
+    .image-gallery{
+        text-align: center;
+        img{
+            width: 25%;
+            
+        }
+    }
+}
+
+footer{
+    background-color: $green;
+    height: 50px;
+    color:$white;
+    text-align: center;
+    line-height: 50px;
 }
