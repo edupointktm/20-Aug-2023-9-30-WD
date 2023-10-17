@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter First Number</label>
+    <input type="text" id="first_num">
+    <label for="">Enter your second number</label>
+    <input type="text" id="second_num">
+    <select name="" id="operator">
+        <option  >+</option>
+        <option  >-</option>
+    </select>
+    <button onclick="caculation()">Calcualte</button>
+    <span id="result"> Result</span>
+
+    <script>
+        function caculation(){
+            let result=0
+            var get_fn = document.querySelector('#first_num').value
+            var get_sn = document.querySelector('#second_num').value
+            var get_operator = document.querySelector('#operator').value
+
+           if(get_operator=="+"){
+              result=get_fn+get_sn
+
+           }
+
+           document.querySelector('#result').innerHTML=result
+        }
+    </script>
+</body>
+</html>
