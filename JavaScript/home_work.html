@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var q = prompt("Enter Question Number 1 to 6")
+
+if(q==1){
+
+    let n=prompt("To Check Odd Or Even, Please Enter Your Number")
+    rem=n%2
+
+    if(rem==0){
+        document.write(`Your Number ${n} Is Even Number`)
+    }
+    else{
+        document.write(`Your Number ${n} Is Odd Number`)
+    }
+
+}
+else if(q==2){
+
+    let c=(prompt("To Check Vowel Or Consonant, Please Enter Your Character (a to z)")).toLowerCase()
+    
+    if(c=="a" || c=="e" || c=="i" || c=="o" || c=="u"){
+        document.write(`Your Character <b><u>${c}</b></u> Is <b>Vowel</b> Letter`)
+    }
+   
+    else{
+        document.write(`Your Character <b><u>${c}</b></u> Is <b>Consonant</b> Letter`)
+    }
+
+}
+else if(q==3){
+
+    let marks=prompt("To Check Your Marks is Passing Marks Or Not, Please Enter Your Marks of a subject")
+
+    if(marks>=35){
+        document.write(`Your Marks ${marks} is Greater than Passing Marks (35), So You Pass the subject`)
+    }
+    else{
+        document.write(`Your Marks ${marks} is Less than Passing Marks (35), So You Fail the subject`)
+        
+    }
+
+}
+else if(q==4){
+
+    let month=prompt("Enter Any Month Number To Display Month Name")
+    
+    if(month==1){
+        document.write("Its Month Of Baishak")
+    }
+    else if(month==2){
+        document.write("Its Month Of Jestha")
+    }
+    else if(month==3){
+        document.write("Its Month Of Asar")
+    }
+    else if(month==4){
+        document.write("Its Month Of Shrawan")
+    }
+    else if(month==5){
+        document.write("Its Month Of Bhadra")
+    }
+    else if(month==6){
+        document.write("Its Month Of Ashoj")
+    }
+    else if(month==7){
+        document.write("Its Month Of Kartik")
+    }
+    else if(month==8){
+        document.write("Its Month Of Mangsir")
+    }
+    else if(month==9){
+        document.write("Its Month Of Poush")
+    }
+    else if(month==10){
+        document.write("Its Month Of Magh")
+    }
+    else if(month==11){
+        document.write("Its Month Of Falgun")
+    }
+    else if(month==12){
+        document.write("Its Month Of Chaitra")
+    }
+    else{
+        document.write("Enter Number Is Not Month Number")
+    }
+}
+else if(q==5){
+
+    let year=prompt("Enter Your Working Years")
+
+    if(year >= 5){ 
+        let salary=prompt("Enter Your Salary")
+        document.write(salary*5/100)
+    }
+    else{
+        document.write("Working Years is Below 5 Years")
+}
+
+}
+else if(q==6){
+    
+    let sales=prompt("Enter Your Total Sales")
+    
+    if(sales<=1000){
+        document.write(`Your Total Sales is ${sales}, So your 5% Commission is Rs. ${sales*5/100}`)
+    }
+    else if(sales<=2500){
+        document.write(`Your Total Sales is ${sales}, So your <br> 5% Commission is Rs. ${1000*5/100} <br> 10% Commission is Rs. ${(sales-1000)*10/100} <br><b> Total Commission is Rs. ${(1000*5/100)+(sales-1000)*10/100} `)
+    }
+    else if(sales>=2501){
+        document.write(`Your Total Sales is ${sales}, So your <br> 5% Commission is Rs. ${1000*5/100} <br> 10% Commission is Rs. ${1500*10/100} <br> 15% Commission is Rs. ${(sales-2500)*15/100} <br><b> Total Commission is Rs. ${(1000*5/100)+(1500*10/100)+(sales-2500)*15/100} `)
+    }
+    else{
+        document.write("Please Enter Valid Number")
+    }
+
+}
+else{
+    document.write("Sorry ! Wrong Question Number")
+}
+    </script>
+</body>
+</html>

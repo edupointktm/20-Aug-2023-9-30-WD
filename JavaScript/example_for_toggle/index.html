@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+
+        .display-show-hide {
+            display: none;
+        }
+
+       
+      
+    </style>
+</head>
+
+<body>
+    <button id="show" onclick="showBox()"> Show</button>
+    <button id="hide" onclick="hideBox()">Hide</button>
+    <button id="show-hide" onclick="showHideBox()">Show/Hide</button>
+    <button id="sh" >Hide</button> <br><br>
+    <div class="box"></div>
+
+    <script>
+        hideBox = ()=>{
+            document.querySelector('.box').classList.add('display-show-hide')
+        }
+
+        showBox=()=>{
+            document.querySelector('.box').classList.remove('display-show-hide')
+        }
+
+        showHideBox=()=>{
+            document.querySelector('.box').classList.toggle('display-show-hide')
+        }
+    </script>
+</body>
+
+</html>
