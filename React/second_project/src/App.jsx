@@ -1,11 +1,14 @@
-
+import Header from "./Page/Header"
+import Footer from "./Page/Footer"
+import Section  from "./Page/Section"
 function App() {
 
     return(
     <>
-        <h1> Header</h1>
-        <h1> Home Page </h1>
-        <h1> Footer</h1>
+        <Header/>
+        
+        <Section/>
+        <Footer/>
 
     </>
 )}
