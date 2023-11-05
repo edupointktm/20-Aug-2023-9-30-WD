@@ -5,18 +5,21 @@ import Contact from './component/Contact'
 import About from './component/About'
 import Gallery from './component/Gallery'
 import Page_not_found from './component/Page_not_found'
+import Student_detials from './component/Student_detials'
 
 function Section() {
   return (
-    <BrowserRouter>
+    
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/stddetails/:std_id" element={<Student_detials/>}/>
         <Route path="/*" element={<Page_not_found/>}/>
+        
       </Routes>
-    </BrowserRouter>
+  
   )
 }
 
